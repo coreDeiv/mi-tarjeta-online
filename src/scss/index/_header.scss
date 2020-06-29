@@ -124,10 +124,15 @@ header {
             content: '';
             bottom: 0;
             left: 50%;
-            transform: translate(35%, 0%);
+            transform: translate(-35%, 0%);
             width: 15px;
             border-bottom: 4px solid $primary-color;
             border-radius: 50px;
+            
+            @include mq(desktop-wide, max) {
+              transform: translate(35%, 0%);
+            }
+
           }
         }
         
