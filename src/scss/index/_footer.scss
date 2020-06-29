@@ -1,0 +1,88 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: $background-body;
+
+  .footer {
+
+    &-main {
+      position: relative;
+      display: block;
+    }
+
+    &-logo_content {
+      background: $primary-color;
+      padding: 2rem 0;
+      border-radius: 20px;
+    }
+
+    &-logo {
+      text-align: center;
+      padding-left: 4rem;
+    }
+
+    &-copy {
+      padding: 2rem 0;
+      text-align: center;
+
+      * {
+        color: $layout-color;
+        font-size: .9rem;
+        letter-spacing: 0.031rem;
+      }
+
+    }
+
+    &-tag {
+      background: $white;
+      display: inline-block;
+      padding: 3px 15px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      color: $primary-color;
+      font-size: .8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    &-column {
+
+      &:first-child {
+        padding-left: 6rem;
+      }
+
+    }
+
+    &-links {
+
+      h1 {
+        color: $white;
+        line-height: .3rem;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &:last-child {
+        
+        a {
+          &:nth-child(2) {
+            display: flex;
+          }
+        }
+
+        .divider-ver {
+          border: 0.031rem ridge $white;
+          margin: auto 15px;
+          height: 20px;
+          margin-top: 1rem;
+        }
+
+      }
+
+    }
+
+  }
+
+}
