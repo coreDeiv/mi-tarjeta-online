@@ -20,6 +20,11 @@ footer {
     &-logo {
       text-align: center;
       padding-left: 4rem;
+
+      @include mq(desktop, max) {
+        padding-left: 2rem;
+      }
+
     }
 
     &-copy {
@@ -38,6 +43,7 @@ footer {
       background: $white;
       display: inline-block;
       padding: 3px 15px;
+      margin-bottom: 15px;
       border-radius: 5px;
       text-transform: uppercase;
       color: $primary-color;
@@ -49,7 +55,12 @@ footer {
     &-column {
 
       &:first-child {
-        padding-left: 6rem;
+        padding-left: 6rem;          
+        
+        @include mq(desktop-wide, max) {
+          padding-left: 4rem;          
+        }
+
       }
 
     }
@@ -58,10 +69,16 @@ footer {
 
       h1 {
         color: $white;
-        line-height: .3rem;
+        margin: 0;
+        font-size: 2rem;
         &:hover {
           text-decoration: underline;
         }
+
+        @include mq(desktop-wide, max) {
+          font-size: 1.5rem;
+        }
+        
       }
 
       &:last-child {
@@ -76,7 +93,6 @@ footer {
           border: 0.031rem ridge $white;
           margin: auto 15px;
           height: 20px;
-          margin-top: 1rem;
         }
 
       }

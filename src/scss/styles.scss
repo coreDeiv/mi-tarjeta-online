@@ -1,6 +1,12 @@
 // Config
 @import "config/variables";
 @import "config/placeholders";
+@import "config/maps";
+
+// Components
+@import "components/mixins";
+@import "components/navbar";
+@import "components/forms";
 
 // Index
 @import "index/footer";
@@ -8,11 +14,6 @@
 @import "index/header";
 @import "index/normalize";
 @import "index/top-header";
-
-// Components
-@import "components/mixins";
-@import "components/navbar";
-@import "components/forms";
 
 // partials
 @import "partials/home/slider";
