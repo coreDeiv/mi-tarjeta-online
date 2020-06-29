@@ -1,0 +1,13 @@
+#top-header {
+  background: $lg-top_header;
+  padding: 5px 0;
+  text-align: center;
+  .link {
+    &-promo {
+      color: $white;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      width: 100%;
+    }
+  }
+}

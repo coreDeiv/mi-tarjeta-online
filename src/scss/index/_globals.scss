@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  @extend %wrap-wrap;
+  scroll-behavior: smooth;
+  background: $background-body;
+}
+
+#wrap-wrap {
+  @extend %wrap-wrap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-titles;
+}
+
+p, span, a, figure, abbr {
+  font-family: $font-text;
+}
+
+a {
+  text-decoration: none;
+}
+
+blockquote {
+  padding: 2rem;
+}

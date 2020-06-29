@@ -17,8 +17,8 @@ sass.compiler = require('node-sass');
 gulp.task('sass', function () {
     return gulp.src([
         'src/scss/**/*.scss',
-        'node_modules/bootstrap/scss/bootstrap.scss',
-        'node_modules/bootstraplus/sass/bootstraplus.sass',
+        'node_modules/bootstrap/dist/css/bootstrap-grid.min.css',
+        // 'node_modules/bootstraplus/sass/bootstraplus.sass',
         'src/fonts/fontawesome/css/all.min.css'
     ])
     .pipe(sourcemaps.init())

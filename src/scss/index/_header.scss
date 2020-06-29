@@ -1,0 +1,172 @@
+/* Header - Main Menu */
+header {
+
+  position: relative;
+
+  .menu {
+
+    position: relative;
+
+    &-main {
+      display: block;
+      padding: 2rem 0;
+    }
+
+    &-logo {
+      text-align: center;
+    }
+    
+    &-input_icons {
+      padding: 2rem 0;
+    }
+
+    &-input {
+
+      @extend %flex-row-center;
+      justify-content: space-between;
+
+      background: $white;
+      padding: 10px 15px;
+      border: {
+        color: $primary-color;
+        width: 3px;
+        style: solid;
+        radius: 15px;
+      }
+
+      i,
+      svg, 
+      span {
+        color: $primary-color;
+        font-weight: bold;
+        font-size: 1.5rem;
+        width: calc(5% - 1px);
+        cursor: pointer;
+      }
+
+      input {
+        border: 0px;
+        outline: 0px;
+        width: calc(70% - 30px);
+        font-size: 1.5rem;
+        font-family: $font-text;
+      }
+
+      select {
+        border: 0px;
+        outline: 0px;
+        font-weight: bold;
+        color: $primary-color;
+        width: calc(25% - 1px);
+        font-family: $font-text;
+        cursor: pointer;
+      }
+
+    }
+
+    &-shop {
+
+      i, 
+      svg {
+        color: $secondary-color;
+        font-size: 2rem;
+        margin: 0 1.2rem;
+      }
+
+      .divider-ver {
+        @extend %divider-ver;
+        margin-right: 1.5rem;
+      }
+
+      .icon-user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+          color: $secondary-color;
+          font-weight: bold;
+        }
+
+      }
+
+    }
+
+    &-links {
+
+      .link-item {
+
+        padding: 10px 0;
+        transition: ease .5s;
+        
+        &.active {
+          position: relative;
+          &::after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 50%;
+            transform: translate(35%, 0%);
+            width: 15px;
+            border-bottom: 4px solid $primary-color;
+            border-radius: 50px;
+          }
+        }
+        
+        &:hover {
+          @extend .link-item.active;
+          transition: ease .5s;
+        }
+
+        a {
+          color: $layout-color;
+          font-weight: bold;
+          padding: 0 0 0 35px;
+          letter-spacing: 2px;
+          transition: ease .5s all;
+        }
+
+      }
+
+    }
+
+    &-social {
+
+      @extend %no-gutters;
+
+      ul {
+
+        @extend %flex-row-center;
+        justify-content: flex-start;
+
+        li {
+          
+          border: {
+            radius: 50%;
+            width: 3px;
+            style: solid;
+            color: $secondary-color;
+          }
+
+          width: 30px;
+          height: 30px;
+          margin: 0 5px;
+          position: relative;
+
+        }
+
+        a {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 1rem;
+          color: $secondary-color;
+        }
+
+      }
+
+    }
+
+  }
+}

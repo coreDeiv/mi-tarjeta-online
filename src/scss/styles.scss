@@ -1,4 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+// Config
+@import "config/variables";
+@import "config/placeholders";
+
+// Index
+@import "index/footer";
+@import "index/globals";
+@import "index/header";
+@import "index/normalize";
+@import "index/top-header";
+
+// Components
+@import "components/mixins";
+@import "components/navbar";
+@import "components/forms";
+
+// partials
+@import "partials/home/slider";
