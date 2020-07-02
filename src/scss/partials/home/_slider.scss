@@ -14,24 +14,35 @@
       counter-increment: carousel-cell;
       opacity: 0;
       overflow: hidden;
-  
-      &.is-selected {
-        opacity: 1;
+      
+      @include mq(desktop-wide, max) {
+        max-height: 45vh !important;
       }
+  
+      &.is-selected { opacity: 1; }
 
     }
 
     &-content {
+
+      position: relative;
       
       h1 {
         color: $white;
         font-size: 4rem;
         margin-bottom: 0;
         margin-top: 0;
+
+        @include mq(desktop-wide, max) { 
+          font-size: 2.5rem; 
+        }
+
       }
 
       img {
-        margin-left: -18rem;
+        position: absolute;
+        top: 0;
+        left: -20%;
       }
 
       .col-text-icon {
@@ -71,17 +82,17 @@
           margin-top: .5rem;
           padding: 0 1rem;
         }
+
       }
 
     }
 
   }
 
-  &-button {
-    display: none;
-  }
+  &-button { display: none; }
 
   &-page-dots {
+
     position: absolute;
     right: 0;
     top: 50%;
@@ -90,8 +101,10 @@
     width: 0 !important;
 
     .dot {
+
       display: block !important;
-      margin: .5rem 0;    
+      margin: .5rem 0;
+
     }
 
   }
