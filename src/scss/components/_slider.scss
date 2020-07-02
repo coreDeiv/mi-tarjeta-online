@@ -69,18 +69,23 @@
 
       .divider-ver {
         border-left: 1px solid $white;
-        height: 50px;
+        height: 75px;
         margin: auto 0;
         margin-left: 1rem;
-        
+        padding: 0 1rem;
+        color: rgba($white, .7);
+
         p {
-          color: $white;
           text-transform: uppercase;
-          font-size: 1.1rem;
+          font-size: .9rem;
           margin-bottom: 0;
-          padding-bottom: 0;
           margin-top: .5rem;
-          padding: 0 1rem;
+          letter-spacing: 1px;
+
+          @include mq(desktop-wide, max) {
+            font-size: .7rem;
+          }
+
         }
 
       }

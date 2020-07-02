@@ -1,0 +1,126 @@
+/* Cards */
+#cards-product {
+
+  height: auto;
+  max-height: 400px;
+
+  .card {
+
+    margin: 1.5rem 0;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    max-height: 300px;
+    // cursor: pointer;
+    // transition: ease .5s all;
+
+    &:hover {
+
+      > .card-front {
+        transform: perspective(600px) rotateY(-180deg);
+      }
+      
+      > .card-back {
+        transform: perspective(600px) rotateY(0deg);
+      }
+
+    }
+
+    &-position {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      min-height: 100%;
+      backface-visibility: hidden;
+      padding: 1.5rem;
+      border-radius: 25px;
+    }
+
+    &-1 {
+      background-image: url(../images/img/product-donking-donnuts.png);
+      background-size: cover;
+      background-position: 3rem -4rem;
+      background-repeat: no-repeat;
+    }
+    &-2 {
+      background-image: url(../images/img/product-amazon.png);
+      background-size: cover;
+      background-position: 3rem -4rem;
+      background-repeat: no-repeat;
+    }
+    &-3 {
+      background-image: url(../images/img/product-app-store.png);
+      background-size: cover;
+      background-position: 3rem -4rem;
+      background-repeat: no-repeat;
+    }
+    &-4 {
+      background-image: url(../images/img/product-google-play.png);
+      background-size: cover;
+      background-position: 3rem -4rem;
+      background-repeat: no-repeat;
+    }
+    &-5 {
+      background-image: url(../images/img/product-pizza-hut.png);
+      background-size: cover;
+      background-position: 3rem -4rem;
+      background-repeat: no-repeat;
+    }
+    &-6 {
+      background-image: url(../images/img/product-nike.png);
+      background-size: cover;
+      background-position: 3rem -4rem;
+      background-repeat: no-repeat;
+    }
+
+    &-front {
+      background-color: $primary-color !important;
+      width: 100%;
+      height: 100%;
+      transition: transform .5s linear;
+      transform: perspective(600px) rotateY(0deg);
+
+      @extend %flex-column-between;
+
+      &:hover {
+        box-shadow: 5px 10px 15px rgba(0,0,0,.5);
+      }
+
+      i, svg {
+        color: $white;
+      }
+
+      h2 {
+        color: $white;
+      }
+
+    }
+    
+    &-back {
+      background-image: linear-gradient(90deg, rgba(255,255,255,.1), rgba(255,255,255,.1));
+      width: 100%;
+      height: 100%;
+      transition: transform .5s linear;
+      transform: perspective(600px) rotateY(180deg);
+
+      @extend %flex-column-between;
+
+      &:hover {
+        box-shadow: 5px 10px 15px rgba(0,0,0,.5);
+      }
+      
+      a {
+        cursor: pointer;
+      }
+
+      i, svg {
+        color: $primary-color;
+      }
+
+    }
+
+  }
+
+}

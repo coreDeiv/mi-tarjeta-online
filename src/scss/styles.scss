@@ -7,6 +7,9 @@
 @import "components/mixins";
 @import "components/navbar";
 @import "components/forms";
+@import "components/slider";
+@import "components/cards";
+@import "components/tags";
 
 // Index
 @import "index/footer";
@@ -16,4 +19,4 @@
 @import "index/top-header";
 
 // partials
-@import "partials/home/slider";
+@import "partials/home";
