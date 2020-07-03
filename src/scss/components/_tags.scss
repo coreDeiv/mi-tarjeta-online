@@ -16,6 +16,13 @@
     }
   }
 
+  &-primary {
+    span {
+      background: $primary-color;
+      color: $white;
+    }
+  }
+
   span {
     padding: 1px 5px;
     text-transform: uppercase;
