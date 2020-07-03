@@ -40,10 +40,14 @@ img {
   max-width: 100%;
 }
 
+sup {
+  vertical-align: bottom !important;
+}
+
 .text-center {
   text-align: center;
 }
 
-sup {
-  vertical-align: bottom !important;
+.flex-row-center {
+  @extend %flex-row-center;
 }

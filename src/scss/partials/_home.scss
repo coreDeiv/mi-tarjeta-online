@@ -1,5 +1,6 @@
 main.home {
 
+  // Title before of section the cards-products
   #title-cards {
 
     h1 {
@@ -11,6 +12,39 @@ main.home {
       }
 
     }
+  }
+
+  // Icons and title of Payment Methods
+  #methods-payment {
+
+    .methods {
+
+      &-icons {
+
+        .flex-row-center {
+          img {
+            filter: grayscale(100%);
+          }
+        }
+
+      }
+
+      &-title {
+        text-align: left;
+
+        h1 {
+          font-size: 4rem;
+          letter-spacing: -3px;
+
+          @include mq(desktop-wide, max) {
+            font-size: 2.5rem;
+          }
+        }
+
+      }
+
+    }
+    
   }
 
 }
