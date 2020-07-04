@@ -17,6 +17,7 @@ sass.compiler = require('node-sass');
 gulp.task('sass', function () {
     return gulp.src([
         'src/scss/**/*.scss',
+        'src/scss/**/*.css',
         'node_modules/bootstrap/dist/css/bootstrap-grid.min.css',
         'node_modules/slick-carousel/slick/slick-theme.scss',
         'node_modules/slick-carousel/slick/slick.scss',
@@ -88,6 +89,7 @@ gulp.task('watch', function () {
     browserSync.init({
         server: 'build'
     });
+    gulp.watch('src/css/**/*.css', gulp.series('css'));
     gulp.watch('src/fonts/**/*', gulp.series('fonts'));
     gulp.watch('src/media/**/*', gulp.series('images'));
     gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
