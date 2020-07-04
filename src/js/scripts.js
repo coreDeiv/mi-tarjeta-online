@@ -1,1 +1,1 @@
-// alert("Estable");
+$('.cards-carousel').slick();

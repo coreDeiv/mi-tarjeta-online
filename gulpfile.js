@@ -18,6 +18,8 @@ gulp.task('sass', function () {
     return gulp.src([
         'src/scss/**/*.scss',
         'node_modules/bootstrap/dist/css/bootstrap-grid.min.css',
+        'node_modules/slick-carousel/slick/slick-theme.scss',
+        'node_modules/slick-carousel/slick/slick.scss',
         'node_modules/flickity/dist/flickity.min.css',
         'src/fonts/fontawesome/css/all.min.css'
     ])
@@ -47,7 +49,8 @@ gulp.task('scripts', function () {
         'node_modules/bootstrap/dist/js/bootstrap.js',
         'node_modules/jquery/dist/jquery.js',
         'node_modules/popper.js/dist/popper.js',
-        'node_modules/flickity/dist/flickity.pkgd.min.js'
+        'node_modules/flickity/dist/flickity.pkgd.min.js',
+        'node_modules/slick-carousel/slick/slick.min.js'
     ])
     .pipe(sourcemaps.init())
     .pipe(babel({

@@ -54,4 +54,60 @@ main.about {
 
   }
 
+  // Title Carousel
+  #title-about {
+    
+    h1 {
+
+      font-size: 4rem;
+      letter-spacing: -2px;
+      
+      @include mq(desktop-wide, max) {
+        font-size: 2rem;
+      }
+
+    }
+
+  }
+
+  #carousel-cards {
+
+    ul.slick-dots {
+
+      margin: -2rem 0;
+
+      li > button {
+
+        width: 5px;
+        height: 5px;
+        background: #44413c;
+        border-radius: 50%;
+
+        &::before {
+          content: '';
+        }
+
+      }
+
+      li.slick-active {
+          
+        button {
+          background: #0d6ba7 !important;
+        }
+
+      }
+
+    }
+
+    .slick-initialized {
+      
+      .slick-slide {
+        outline: 0px;
+        cursor: grab;
+      }
+      
+    } 
+
+  }
+
 }
