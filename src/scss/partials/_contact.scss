@@ -1,0 +1,107 @@
+.contact {
+
+  #info-location {
+    
+    .location {
+
+      // background: $white;
+
+      h1 {
+        margin: .5rem 0;
+      }
+
+      &-title {
+
+        h1 {
+          font-size: 3.5rem;
+          letter-spacing: -2px;
+          margin: .5rem 0;
+
+          @include mq(desktop-wide, max) {
+            font-size: 2.5rem;
+          }
+          
+        }
+      }
+      
+      &-general {
+        
+        h1 {
+          font-size: 2.5rem;
+
+          @include mq(desktop-wide, max) {
+            font-size: 1.5rem;
+          }
+
+        }
+
+      }
+      
+    }
+
+  }
+
+  #contact-form {
+
+    .contactus {
+
+      background: $white;
+      padding: 3rem 5rem;
+
+      h1 {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        i, span, svg, img, figure {
+          font-size: .8rem;
+          margin-left: 1rem;
+          margin-top: .5rem;
+        }
+      }
+
+      &-form_group { display: block; }
+
+      &-input_group {
+
+        border-bottom: 1px solid $black;
+        display: flex;
+
+        input, textarea {
+          border: 0px;
+          width: 100%;
+          padding: 10px 15px;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          font-family: $font-text;
+          font-weight: bold;
+          &:focus {
+            outline: 0px;
+          }
+        }
+
+        textarea {
+          text-transform: capitalize;
+        }
+
+        span {
+          transition: $transition-sm;
+          opacity: 0;
+        }
+
+      }
+
+      input[type="checkbox"] ~ span {
+        a {
+          color: $primary-color;
+          font-weight: bold;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
