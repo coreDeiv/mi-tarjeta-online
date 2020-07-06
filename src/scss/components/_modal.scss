@@ -1,0 +1,137 @@
+.modal {
+
+  position: relative;
+  border-radius: 30px;
+
+  .row {
+    padding: 1rem;
+  }
+
+  &-image {
+    
+    padding: 3rem;
+
+    img {
+      filter: $shadow-png;
+    }
+
+  }
+
+  &-content {
+    width: auto;
+    max-width: 550px;
+  }
+
+  &-title {
+    
+    h1 {
+      font-size: 3rem;
+      letter-spacing: -2px;
+      margin-top: 0rem;
+      margin-bottom: 1rem;
+    }
+
+  }
+
+  &-tags {
+    margin-bottom: 1rem;
+  }
+  
+  &-subtitle {
+    margin-bottom: 1rem;
+    
+    h2 {
+      font-family: $font-text !important;
+      font-weight: bold;
+    }
+
+  }
+
+  &-description {
+
+    p {
+      max-lines: 5;
+
+      a {
+        color: $secondary-color;
+        font-weight: bold;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+    }
+
+  }
+
+  &-form {
+    width: 100%;
+    max-width: 100%;
+    cursor: default;
+
+    form {
+      margin-left: 0;
+    }
+
+  }
+  
+  &-price {
+    
+    @extend %flex-row-center;
+    justify-content: space-between;
+    margin: 2rem 0;
+
+    label {
+
+      // pointer-events: none;
+      position: relative;
+      cursor: pointer;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 .5rem;
+
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+
+    }
+
+    input,
+    input ~ span {
+      padding: .5rem 1rem;
+      pointer-events: none;
+    }
+    
+    input[type="radio"] {
+      pointer-events: none;
+      display: none;
+    }
+    
+    span,
+    span span {
+      pointer-events: none;
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      border: 2px solid $text-color;
+      color: $text-color;
+      font-weight: bold;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+    
+    input:checked ~ span {
+      background: $primary-color;
+      color: $white;
+      border: 2px solid $primary-color;
+    }
+
+  }
+
+  &-buttons { @extend %flex-row-between; }
+
+}

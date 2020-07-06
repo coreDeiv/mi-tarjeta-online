@@ -8,6 +8,7 @@ $cart-color: #0b71ff !default;
 
 // Elements Colors
 $lg-top_header: linear-gradient(90deg, $primary-color, $cart-color) !default;
+$lg-top_header-reverse: linear-gradient(90deg, $cart-color, $primary-color) !default;
 $background-body: #fdfaf5 !default;
 
 // Other Colors
@@ -17,3 +18,9 @@ $black: #000;
 // Fuentes
 $font-titles: 'Playfair Display', sans-serif, serif;
 $font-text: 'Source Sans Pro', sans-serif, serif;
+
+// Abtracts
+$transition-sm: ease .3s all !important;
+$transition-md: ease-in .5s all !important;
+$transition-lg: ease-in-out .7s all !important;
+$shadow-png: drop-shadow(-15px 35px 35px rgba(0,0,0,0.75));

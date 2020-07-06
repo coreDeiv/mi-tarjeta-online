@@ -1,0 +1,77 @@
+.btn {
+  
+  display: inline-block;
+  max-width: 100%;
+  white-space: nowrap;
+  text-decoration: none;
+  color: unset;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 10px 25px;
+
+  transition: $transition-sm;
+  
+  border: {
+    
+    radius: 40px;
+    color: transparent;
+    width: 2px;
+    style: solid;
+    
+  }
+  
+  &-primary {
+    
+    background: $lg-top_header-reverse;
+    color: $white;
+    transition: $transition-sm;
+    
+    &:hover {
+      background: $lg-top_header;
+      transition: $transition-sm;
+    }
+
+  }
+
+  &-outline {
+
+    background: $white;
+    color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover {
+      @extend .btn-primary;
+    }
+
+  }
+
+}
+
+.fancybox {
+
+  &-button {
+    
+    //Rest button Content
+    svg {
+      display: none;
+    }
+
+    // Estas configuracion se va a cambiar, cuandos e pasen los iconos a Fuente
+    position: absolute;
+    top: 4% !important;
+    right: 2% !important;
+    background-image: url(../images/icons/icon-close.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+
+  }
+
+  &-close-small {
+    // pointer-events: none;
+  }
+
+}
