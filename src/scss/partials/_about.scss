@@ -106,7 +106,46 @@ main.about {
         cursor: grab;
       }
       
-    } 
+    }
+
+    .card-item {
+
+      a:focus {
+        outline: none;
+      }
+
+      &_title {
+        h1 {
+          margin-top: .5rem;
+          margin-bottom: .5rem;
+          color: $secondary-color;
+        }
+      }
+
+      &_tag--span {
+        
+        @extend %flex-row-center;
+        justify-content: flex-start;
+
+      }
+
+      &_tag {
+        span {
+          border-radius: 5px;
+        }
+      }
+
+      &_span {
+        margin-left: 1rem;
+        color: $black;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: .8rem;
+      }
+      
+    }
 
   }
 
