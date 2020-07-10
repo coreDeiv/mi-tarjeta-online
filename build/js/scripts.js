@@ -1,2 +1,2 @@
-"use strict";$(".cards-carousel").slick();
+"use strict";function openQuestion(e,t){var s,a,l;for(a=document.getElementsByClassName("tabcontent"),s=0;s<a.length;s++)a[s].style.display="none";for(l=document.getElementsByClassName("tablinks"),s=0;s<l.length;s++)l[s].className=l[s].className.replace(" active","");document.getElementById(t).style.display="block",e.currentTarget.className+=" active"}$(".cards-carousel").slick();
 //# sourceMappingURL=maps/scripts.js.map
