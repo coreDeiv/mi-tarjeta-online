@@ -84,6 +84,10 @@ header {
 
     &-shop {
 
+      @include mq(tablet-pro, max) {
+        display: none;
+      }
+
       i, 
       svg {
         color: $secondary-color;
@@ -111,6 +115,10 @@ header {
     }
 
     &-links {
+
+      @include mq(tablet-pro, max) {
+        display: none;
+      }
 
       .link-item {
 
@@ -144,13 +152,18 @@ header {
         a {
           color: $layout-color;
           font-weight: bold;
-          padding: 0 35px 0 35px;
+          padding: 0 15px 0 15px;
           letter-spacing: 2px;
           transition: ease .5s all;
           
-          @include mq(desktop-wide, max){
+          @include mq(desktop-wide, max) {
             letter-spacing: 0rem;
+            padding: 0 0 0 20px;
+          }
+          
+          @include mq(tablet-wide, max) {
             padding: 0 0 0 25px;
+            font-size: .8rem;          
           }
 
         }
@@ -160,6 +173,10 @@ header {
     }
 
     &-social {
+
+      @include mq(tablet-pro, max) {
+        display: none;
+      }
 
       @extend %no-gutters;
 
