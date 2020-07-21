@@ -41,7 +41,10 @@
         }
         @include mq(tablet-wide, max) {
           font-size: 1.8rem;
-        }        
+        }
+        @include mq(phone-md, max) {
+          font-size: 1.3rem;
+        }
       }
 
       img {
