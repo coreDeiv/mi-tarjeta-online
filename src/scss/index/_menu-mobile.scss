@@ -153,4 +153,25 @@
     }
   }
 
+  &-button_box {
+
+    div {
+      padding: .3rem;
+      margin-bottom: .5rem;
+      border: {
+        width: 2px;
+        style: solid;
+        radius: 3px;
+        color: $primary-color;
+      }
+    }
+
+    a {
+      font-size: 1.2rem;
+      color: $primary-color;
+      text-decoration: none;
+    }
+
+  }
+
 }
