@@ -21,6 +21,11 @@
             font-size: 2.5rem;
           }
           
+          @include mq(phone, max) {
+            font-size: 1.8rem;
+            text-align: center;
+          }
+          
         }
       }
       
@@ -36,6 +41,12 @@
         }
 
       }
+
+      &-content {
+        @include mq(desktop-wide, max) {
+          margin-bottom: 1rem;
+        }
+      }
       
     }
 
@@ -47,11 +58,17 @@
 
       background: $white;
       padding: 3rem 5rem;
+      @include mq(desktop-wide, max) {
+        padding: 1rem 2rem;
+      }
 
       h1 {
         font-size: 2rem;
         display: flex;
         align-items: center;
+        @include mq(desktop-wide, max) {
+          font-size: 1.2rem;
+        }
         i, span, svg, img, figure {
           font-size: .8rem;
           margin-left: 1rem;
