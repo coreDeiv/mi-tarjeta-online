@@ -11,6 +11,11 @@ button.btn {
   letter-spacing: 1px;
   font-weight: bold;
   padding: 10px 25px;
+  @include mq(phone-md, max) {
+    font-size: .775rem;
+    padding: 7.5px 10px;
+    margin-bottom: 1rem;
+  }
 
   transition: $transition-sm;
   

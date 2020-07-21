@@ -36,6 +36,9 @@
     margin: 0 2px;
     line-height: 5px;
     overflow: hidden;
+    @include mq(phone-md, max) {
+      font-size: .65rem;
+    }
     
     & ~ span {
       margin: 0 2px;

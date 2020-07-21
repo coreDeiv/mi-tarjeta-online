@@ -2,9 +2,17 @@
 
   position: relative;
   border-radius: 30px;
+  
+  @include mq(phone-md, max) {
+    padding: .5rem;
+    border-radius: 15px;
+  }
 
   .row {
     padding: 1rem;
+    @include mq(phone, max) {
+      padding: 0rem;
+    }
   }
 
   &-image {
@@ -20,6 +28,9 @@
   &-content {
     width: auto;
     max-width: 550px;
+    @include mq(phone-md, max) {
+      max-width: 400px;
+    }
   }
 
   &-title {
@@ -29,6 +40,9 @@
       letter-spacing: -2px;
       margin-top: 0rem;
       margin-bottom: 1rem;
+      @include mq(phone-md, max) {
+        font-size: 1.5rem;
+      }
     }
 
   }
@@ -104,6 +118,9 @@
     input ~ span {
       padding: .5rem 1rem;
       pointer-events: none;
+      @include mq(phone-md, max) {
+        padding: .250rem .5rem;
+      }
     }
     
     input[type="radio"] {
@@ -122,6 +139,9 @@
       font-weight: bold;
       border-radius: 5px;
       white-space: nowrap;
+      @include mq(phone-md, max) {
+        font-size: .875rem;
+      }
     }
     
     input:checked ~ span {
