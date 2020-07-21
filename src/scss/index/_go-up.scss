@@ -1,0 +1,13 @@
+.go-up {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  background: $goup-color;
+  a {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+  }
+}

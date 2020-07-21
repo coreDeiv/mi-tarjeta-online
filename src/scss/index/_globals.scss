@@ -51,3 +51,16 @@ sup {
 .flex-row-center {
   @extend %flex-row-center;
 }
+
+a.link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 .5rem;
+  img.icon {
+    width: auto;
+    height: 35px;
+  }
+}
