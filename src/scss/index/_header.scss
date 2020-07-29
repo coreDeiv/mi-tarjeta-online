@@ -28,8 +28,12 @@ header {
 
     &-input {
 
-      @extend %flex-row-center;
-      justify-content: space-between;
+      @include mq(tablet-pro, max) {
+        display: none;
+      }
+
+      display: inline-flex;
+      align-items: center;
 
       background: $white;
       padding: 10px 15px;
@@ -46,27 +50,29 @@ header {
         color: $primary-color;
         font-weight: bold;
         font-size: 1.5rem;
-        width: calc(5% - 1px);
+        width: auto;
         cursor: pointer;
+      }
+
+      form {
+        display: flex;
       }
 
       input {
         border: 0px;
         outline: 0px;
-        width: calc(75% - 30px);
+        // width: auto;
         font-size: 1.5rem;
         font-family: $font-text;
-
+        // float: left;
+        max-width: 50%;
+        padding-bottom: 5px;
+        
         &::placeholder {
           color: $primary-color;
           font-size: 1rem;
           font-weight: bold;
         }
-        
-        @include mq(desktop, max) {
-          width: calc(65% - 30px);
-        }
-
       }
 
       select {
@@ -74,16 +80,13 @@ header {
         outline: 0px;
         font-weight: bold;
         color: $primary-color;
-        width: calc(25% - 1px);
         font-family: $font-text;
-        margin-left: 1rem;
-        margin-bottom: .3rem;
+        margin-left: auto;
+        // margin-bottom: .3rem;
         cursor: pointer;
-        
-        @include mq(desktop, max) {
-          width: calc(35% - 1px);
-        }
-
+        float: right;
+        // width: auto;
+        max-width: 50%;
       }
 
     }

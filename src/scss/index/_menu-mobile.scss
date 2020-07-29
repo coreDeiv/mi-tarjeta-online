@@ -12,6 +12,13 @@
   transition: ease .5s;
   z-index: 10;
 
+  &-button_box {
+    display: none;
+    @media (max-width: 1025px) {
+      display: block !important;
+    }
+  }
+
   &.active {
     display: block;
   }
