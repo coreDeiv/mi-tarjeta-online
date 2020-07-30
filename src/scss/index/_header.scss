@@ -223,5 +223,25 @@ header {
 
     }
 
+    &-cart-alert {
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '3';
+        top: 0;
+        right: 0;
+        background: #0b71fa;
+        color: #fff;
+        width: 15px;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .8rem;
+        padding-bottom: .250rem;
+        border-radius: 50%;
+      }
+    }
+
   }
 }
