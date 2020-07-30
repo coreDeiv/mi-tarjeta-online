@@ -22,6 +22,9 @@ main.about {
           min-height: 25rem;
           height: auto;
         }
+        @include mq(tablet-pro, max) {
+          background-position: 110% 70%, 25% 15%;
+        }
 
         display: flex;
         justify-content: flex-end;

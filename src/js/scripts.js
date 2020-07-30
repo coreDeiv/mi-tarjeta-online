@@ -1,4 +1,6 @@
 
+$('.cards-carousel').slick();
+
 function openMenu() {
   
   var btnOpen = document.getElementById("open-menu-button");
